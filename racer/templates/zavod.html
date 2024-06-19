@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h1>{{ zavod.name }} {{ zavod.date }}</h1>
+
+<p>Info: {{ zavod.info }}</p>
+
+<p>Přihláška na závod: <a href="prihlaska/{{ id }}"><b>ZDE</b></a></p>
+    
+
+<p>Zpět na <a href="/all-zavod">výpis závodů</a></p>
+
+{% endblock %}

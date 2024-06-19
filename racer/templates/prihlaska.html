@@ -1,0 +1,18 @@
+
+{% extends "main.html" %}
+
+
+{% block content %}
+<h1>{{ zavod.name }} {{ zavod.date }}</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+        {{ form.as_p }}
+        <button type="submit">Odeslat</button>
+    </form>
+
+{% endblock %}
+
+
+    

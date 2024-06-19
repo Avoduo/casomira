@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+<title>Závodník: {{ myracer.firstname }} {{ myracer.lastname }}</title>
+<h1>{{ myracer.firstname }} {{ myracer.lastname }}</h1>
+
+<p>Telefon: {{ myracer.phone }}</p>
+<p>E-mail: {{ myracer.email }}</p>
+<p>Ročník narození: {{ myracer.date }}</p>
+<p>Pohlaví: {{ myracer.sex }}</p>
+
+
+<p>Zpět na <a href="/all-racer">výpis závodníků</a></p>
+
+{% endblock %}

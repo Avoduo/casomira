@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+   
+    {% block title %}<title>Výsledkový servis</title>{% endblock %}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+{% include "navigation.html" %}
+
+
+    {% block content %}
+
+    <h1>INFORMACE NA ÚVOD </h1>
+
+    {% endblock %}
+
+
+{% include "footer.html" %}
+
+</body>
+</html>

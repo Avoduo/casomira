@@ -1,0 +1,13 @@
+<title>Seznam závodů</title>
+{% extends "main.html" %}
+
+{% block content %}
+
+<h1>Závody:</h1>
+
+<ul>
+    {% for x in zavod %}
+    <li><a href="zavod/{{ x.id }}">{{ x.name}}</a> ({{ x.date}})</li>
+    {% endfor %}
+</ul>
+{% endblock %}

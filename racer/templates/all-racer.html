@@ -1,0 +1,14 @@
+<title>Seznam závodníků</title>
+
+{% extends "main.html" %}
+
+{% block content %}
+
+<h1>Závodníci:</h1>
+
+<ul>
+    {% for x in myracers %}
+    <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a> ({{ x.date }})</li>
+    {% endfor %}
+</ul>
+{% endblock %}
