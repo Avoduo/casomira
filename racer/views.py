@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.template import loader
 from .models import Racer, Zavod
 
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from .forms import PersonForm
 
 def racer(request):
@@ -54,3 +54,6 @@ def prihlaska(request):
         form = PersonForm()
     return render(request, 'prihlaska.html', {'form': form})
 
+def policy(request):
+  template = loader.get_template('private-policy.html')
+  return HttpResponse(template.render())
